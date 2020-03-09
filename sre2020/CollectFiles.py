@@ -35,7 +35,6 @@ def countfiles(dictfiles, lsttokens, repo):
                 filesjson = shaDetails['files']
                 for filenameObj in filesjson:
                     filename = filenameObj['filename']
-                    # if filename.endswith('.kt') or filename.endswith('.java'):
                     dictfiles[filename] = dictfiles.get(filename, 0) + 1
             ipage += 1
     except:
